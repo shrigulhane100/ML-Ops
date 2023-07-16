@@ -1,18 +1,26 @@
 from setuptools import find_packages, setup
 from typing import List
-hypen_e_dot = '-e .'
-def get_requirements(file_path:str)->List[str]:
-    ''''
-    This functions will return a list of requirements
-    '''
-    requiements=[]
-    with open(file_path) as file_obj:
-        requiements=file_obj.readlines()
-        requiements = [req.replace('\n', '') for req in requiements]
-        if hypen_e_dot in requiements:
-            requiements.remove(hypen_e_dot)
 
-    return requiements
+HYPEN_E_DOT='-e .'
+def get_requirements(file_path:str)->List[str]:
+    """
+    Retrieves a list of requirements from a file.
+
+    Args:
+        file_path (str): The path to the file containing the requirements.
+
+    Returns:
+        List[str]: A list of requirements extracted from the file.
+    """
+    requirements=[]
+    with open(file_path) as file_obj:
+        requirements=file_obj.readlines()
+        requirements=[req.replace("\n","") for req in requirements]
+
+        if HYPEN_E_DOT in requirements:
+            requirements.remove(HYPEN_E_DOT)
+    
+    return requirements
 
 
 setup(
