@@ -7,3 +7,4 @@ Project Playlist: [End To End Data Science Playlist- Get Prepared With Industry 
 An end-to-end data science project refers to the entire lifecycle of a data science initiative, starting from problem formulation to delivering actionable insights or deploying a model into production. 
 It involves various stages, including data acquisition, data preprocessing, exploratory data analysis, feature engineering, model selection and training, model evaluation, and finally, deploying the solution or communicating the results.
 
+![ALT Text](https://github.com/shrigulhane100/ML-Ops/blob/main/image/Screenshot%20(552).png)
